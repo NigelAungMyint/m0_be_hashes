@@ -107,7 +107,29 @@ p posts[0]
 # Hash. Each of those Hashes has 4 key-value pairs. This may LOOK
 # a bit daunting - it's OK! You don't need to be 100% comfortable with this, but it's
 # good to have some exposure before going into Mod 1.
-
+email = [
+  {
+  sender: "wakka@gmail.com",
+  recipient: "lulu@gmail.com",
+  subject: "Plans for tomorrow",
+  body: "Dear Lulu, do you wanna go to the movies tomorrow?  From, Wakka",
+  timestamp: "July 33 2022 4:44 PM"
+},
+{sender: "tidus@gmail.com",
+recipient: "rikku@gmail.com",
+subject: "Plans for tomorrow",
+body: "Dear Rikku, do you wanna go to lunch tomorrow?  From, Tidus",
+timestamp: "July 19 2022 10:35 PM"
+},
+{
+  sender: "auron@gmail.com",
+  recipient: "kimari@gmail.com",
+  subject: "Plans for tomorrow",
+  body: "Dear Kimari, do you wanna go to the gym tomorrow?  From, Auron",
+  timestamp: "July 18 2022 10:32 PM"
+}
+]
+p email
 
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same
 # key-value pairs you used in your email Hash above.
