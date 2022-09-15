@@ -10,8 +10,10 @@ states = {
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
 #
 #
-#
-
+#              |key  , value       |
+states.each do |state, abbreviation|
+  puts "The abbreviation of #{state} is #{abbreviation}."
+end
 
 # ======================================
 # 2- Using the following Hash
@@ -26,8 +28,10 @@ birthdays = {
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
 #
 #
-#
-
+# I definitely flip flopped the key and value for the parameters at first
+birthdays.each do |name, birthday|
+  puts "#{name}'s birthday is #{birthday}."
+end
 
 # ======================================
 # 3- Using the following Hash
@@ -43,3 +47,8 @@ login_statuses = {
 #
 #
 #
+login_statuses.each do |name,is_logged_in|
+  if is_logged_in
+    p "#{name} is logged in."
+end
+end #gotta have an end for both do and if 
